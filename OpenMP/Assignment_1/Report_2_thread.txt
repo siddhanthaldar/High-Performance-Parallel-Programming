@@ -1,0 +1,9 @@
+Number of threads = 2
+
+Time taken to generate data = 13.8768
+
+Search for matching strings
+Time taken to match string = 0.03746
+
+Calculating percentage redundancy
+Average Percentage redundancy = 4.85569

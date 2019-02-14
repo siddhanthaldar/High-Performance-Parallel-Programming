@@ -1,0 +1,3 @@
+Serial time = 2.08375
+Total time for four cores = 0.946492		 Percentage Improvement = 54.5776
+Total time for sixteen cores = 0.312235		 Percentage Improvement = 85.0157
