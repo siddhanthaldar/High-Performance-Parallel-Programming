@@ -1,0 +1,17 @@
+#!/bin/sh
+# Torque script to submit CUDA C/C++ programs.
+
+# Torque is the scheduler in this GPU compiler
+
+# Torque directives
+#PBS -N helloCUDA           # Giving name to particular script
+#PBS -W group_list=hp3      # Say that we are a user in the group "hp3"
+#PBS -q gpu                 # -q -> stands for a particular queue in the cluster...2 queues are cpu and gpu
+# PBS -l walltime=00:05:00,mem=400mb,nodes=compute-0-3:gpus=1    # walltime -> terminate job if it takes more than 5 minutes, specify memory needed for program, specify which compute node we want to launch program in, 
+#PBS -V
+
+# User Directives
+# add path to folder in which Makefile exists
+cd hp3_lab/cuda/ass_2b
+make run
+#End of script
